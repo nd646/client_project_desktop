@@ -67,7 +67,10 @@
     <br>
     <footer>
         <br>
-        <p>CAPS | <a href="https://caps.umich.edu/">CAPS </a></p>
+        <p><span id="year"></span> - CAPS | <a href="https://caps.umich.edu/">CAPS </a></p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
         <br>
     </footer>
     

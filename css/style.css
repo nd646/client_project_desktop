@@ -1,0 +1,246 @@
+.skip a{
+    position: absolute;
+    top: -40px;
+  }
+
+.skip a:focus{
+    top: 0;
+}
+
+a{
+    color: #FFCB05;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+body{
+    background: #f5ebdc;
+}
+
+ol{
+    padding-left: 30px;
+}
+
+h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #000000;
+}
+
+h3{
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-style: italic;
+    color: #000000;
+}
+
+p{
+    line-height: 20px;
+}
+
+.active{
+    color: #FFCB05;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ffffff;
+    padding: 4px;
+}
+
+.header{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    background-color: #00274C;
+}
+
+form {
+    background-color: #00274C; 
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    color: white; 
+  }
+
+.home_header{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    background-color: #00274C;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    margin: 20px;
+}
+
+.CAPS_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 20px;
+}
+
+.home_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 20px;
+}
+
+.CAPS_container div:first-child{
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.container div:first-child{
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.container h2{
+    text-align: left;
+}
+
+footer{
+    background-color: #00274C;
+    text-align: center;
+    color: #FFCB05;
+}
+
+a:visited {
+    color: #FFCB05;
+}
+
+.error_container{
+    align-items: center;
+    padding: 50px;
+}
+
+.error_container h1{
+    font-size: 200px;
+    color: #00274C;
+}
+
+.error_container h2{
+    font-size: 80px;
+    color: #00274C;
+}
+
+.error_container a, .error_container p{
+    font-size: 50px;
+    color: #00274C;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    .home_header nav ul{
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    header nav ul{
+        display: flex;
+        gap: 160px;
+        align-items: center;
+        font-size: 20px;
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .container #empowering_students{
+        grid-column: 1;
+        grid-row: 3;
+        text-align: left;
+    }
+
+    .container #supporting_students{
+        grid-column: 2;
+        grid-row: 3;
+        text-align: left;
+    }
+
+    .container #cew_logo{
+        grid-column: 3;
+        grid-row: 3;
+        text-align: left;
+    }
+    
+    .CAPS_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    
+    .CAPS_container div:first-child{
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .CAPS_container #ipc{
+        grid-column: 2;
+        grid-row: 3;
+        text-align: left;
+    }
+
+    .home_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .home_container #life-outside-classroom{
+        grid-column: 3 / -1;
+        grid-row: 1 / -1;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .home_container #mental_health{
+        grid-row: 3 / 2;
+        grid-column: 2 / 3;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    
+    .container div:first-child{
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+    .container h2{
+        text-align: left;
+    }
+
+}
